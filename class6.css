@@ -33,6 +33,3 @@ h1{
     grid-row: span 2;
     background: rgb(255, 217, 0);
 }
-.item6{
-    grid-column: span 4;
-}
