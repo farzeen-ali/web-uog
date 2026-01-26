@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background: #f4f4f4;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+header{
+    background: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 1.2rem;
+}
+
+.container{
+    padding: 1rem;
+}
+
+.box{
+    background: #016b98;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+.layout{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+/* Medium Devices */
+@media (max-width: 992px){
+    .layout{
+        grid-template-columns: 1fr;
+    }
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+/* Small Devices */
+@media (max-width: 576px){
+    .cards{
+        grid-template-columns: 1fr;
+    }
+    header{
+        font-size: 0.9rem;
+    }
+}
